@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		.main{
+			height: 600px;
+			width: 610px;
+			margin: auto;
+			font-family: arial;
+		}
+		.block_uno{
+			width: 100%;
+			height: 50px;
+			background-color: purple;
+			border-radius: 10px 10px 10px 10px;
+		}
+		.block_dos{
+			width: 100%;
+			height: 530px;
+			margin: 3px;
+		}
+		.block_tres{
+			width: 100%;
+			height: 50px;
+			background-color: purple;
+			border-radius: 10px 10px 10px 10px;
+		}
+		.largo{
+			height: 100%;
+			width: 80px;
+			background-color: red;
+			float: left;
+			border-radius: 5px 5px 5px 5px;
+			margin-left: 3px;
+			margin-right: 3px;
+
+		}
+		.med{
+			height: 50%;
+			background-color: black;
+			border-radius: 5px 5px 5px 5px;
+		}
+		.boton{
+			background-color: yellow;
+			width: 50px;
+			height: 25px;
+			margin-top: 20px;
+			margin-left: 15px;
+			border-radius: 5px 5px 5px 5px;
+			border-style: none;
+			font-size: 20px;
+		}
+		h1{
+			color: white;
+			text-align: center;
+			margin:0; 
+			padding-top:20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function cambiarColor1 (){
+		document.getElementById('c').style.backgroundColor = "Purple";
+}
+function cambiarColor2 (){
+		document.getElementById('e').style.backgroundColor = "red";
+}
+function cambiarColor3 (){
+		document.getElementById('g').style.backgroundColor = "yellow";
+}
+function cambiarColor4 (){
+		document.getElementById('b').style.backgroundColor = "RoyalBlue";
+}
+function cambiarColor5 (){
+		document.getElementById('a').style.backgroundColor = "pink";
+}
+function cambiarColor6 (){
+		document.getElementById('b').style.backgroundColor = "green";
+}
+function cambiarColor7 (){
+		document.getElementById('d').style.backgroundColor = "green";
+}
+	</script>
+	<div class="main">
+		<div class="block_uno"></div>
+		<div class="block_dos">
+			<div class="largo" id="a"><button class="boton" onclick="cambiarColor1()">1</button><h1>a</h1></div>
+			<div class="largo" style="background-color:white;">
+				<div class="med" style="background-color:#1cedd4;"><button class="boton" onclick="cambiarColor2()">2</button></div>
+				<div class="med" style="background-color:#1df911;" id="b"><h1>b</h1></div>
+			</div>
+			<div class="largo" id="c"><button class="boton" onclick="cambiarColor3()">3</button><h1>c</h1></div>
+			<div class="largo" style="background-color:white;">
+				<div class="med" style="background-color:#660d00;"><button class="boton" onclick="cambiarColor4()">4</button></div>
+				<div class="med" style="background-color:purple;" id="d"><h1>d</h1></div>
+			</div>
+			<div class="largo" style="background-color:white;">
+				<div class="med" style="background-color:#1cedd4;" id="e"><button class="boton" onclick="cambiarColor5()">5</button><h1>e</h1></div>
+				<div class="med" style="background-color:#1df911;"></div>
+			</div>
+			<div class="largo"><button class="boton" id="f" onclick="cambiarColor6()">6</button><h1>f</h1></div>
+			<div class="largo" style="background-color:white;">
+				<div class="med" style="background-color:#1cedd4;" id="g"><button class="boton" onclick="cambiarColor7()">7</button><h1>g</h1></div>
+				<div class="med" style="background-color:#1df911;"></div>
+			</div>
+		</div>
+		<div class="block_tres"></div>
+	</div>
+</body>
+</html>
